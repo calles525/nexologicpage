@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Política de Privacidad de Nexo Logic. Protección de datos personales y uso de cookies.">
+    <title>Política de Privacidad | Nexo Logic</title>
+
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Muli:wght@400;700&display=swap"
+        rel="stylesheet">
+    
+    <!-- Tu Favicon -->
+    <link rel="shortcut icon" href="./Agenda(6).ico" type="image/x-icon">
+
+    <!-- Iconos FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* --- VARIABLES CSS (Tema Nocturno - Mismas que index) --- */
+        :root {
+            --primary-color: #3b82f6;
+            --primary-dark: #2563eb;
+            --accent-color: #06b6d4;
+            --bg-body: #020617;
+            --bg-card: #0f172a;
+            --bg-card-hover: #1e293b;
+            --bg-header: rgba(2, 6, 23, 0.85);
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --text-dim: #64748b;
+            --border-color: #1e293b;
+            --font-main: 'Inter', sans-serif;
+            --font-code: 'JetBrains Mono', monospace;
+            --container-width: 1200px;
+            --header-height: 80px;
+        }
+
+        /* --- RESET & GLOBAL --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-main);
+            color: var(--text-main);
+            background-color: var(--bg-body);
+            line-height: 1.7; /* Mayor espaciado para lectura legal */
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--primary-color);
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* --- HEADER --- */
+        header {
+            height: var(--header-height);
+            background-color: var(--bg-header);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .img-nexo {
+            height: 70px;
+            width: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+            text-shadow: 0 0 8px rgba(59, 130, 246, 0.4);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-main);
+        }
+
+        /* --- CONTENIDO PRINCIPAL DE PRIVACIDAD --- */
+        .privacy-section {
+            padding: calc(var(--header-height) + 60px) 0 80px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Contenedor estilo "Papel" dentro del modo oscuro */
+        .paper-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 60px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .header-text {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .header-text h1 {
+            font-size: 2.5rem;
+            color: var(--text-main);
+            margin-bottom: 10px;
+        }
+
+        .update-date {
+            font-family: var(--font-code);
+            color: var(--accent-color);
+            font-size: 0.9rem;
+        }
+
+        .content-block {
+            margin-bottom: 40px;
+        }
+
+        .content-block h2 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .content-block h2::before {
+            content: '#';
+            color: var(--text-dim);
+        }
+
+        .content-block h3 {
+            font-size: 1.1rem;
+            color: var(--text-main);
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .content-block p {
+            margin-bottom: 15px;
+            color: var(--text-muted);
+            text-align: justify;
+        }
+
+        .content-block ul {
+            margin-bottom: 15px;
+            padding-left: 20px;
+            list-style-type: disc;
+            color: var(--text-muted);
+        }
+        
+        .content-block li {
+            margin-bottom: 8px;
+        }
+
+        .highlight-box {
+            background: rgba(59, 130, 246, 0.05);
+            border-left: 4px solid var(--primary-color);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 6px 6px 0;
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            background-color: #000000;
+            color: var(--text-muted);
+            padding: 60px 0 20px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid #1e293b;
+        }
+
+        .footer-brand p {
+            margin-top: 15px;
+            max-width: 300px;
+        }
+
+        .footer-col h4 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col a:hover {
+            color: var(--accent-color);
+        }
+
+        .copyright {
+            text-align: center;
+        }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 768px) {
+            .paper-card {
+                padding: 30px;
+            }
+            
+            .header-text h1 {
+                font-size: 2rem;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .nav-links {
+                position: fixed;
+                top: var(--header-height);
+                left: 0;
+                width: 100%;
+                background: #0f172a;
+                border-bottom: 1px solid rgba(255,255,255,0.1);
+                flex-direction: column;
+                padding: 20px;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+                transform: translateY(-150%);
+                transition: transform 0.3s ease-in-out;
+                text-align: center;
+                gap: 20px;
+                z-index: 999;
+            }
+
+            .nav-links.active {
+                transform: translateY(0);
+            }
+            
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <!-- Tu logo imagen -->
+                <img class="img-nexo" src="./Agenda(5).png" alt="Nexo Logic Logo">
+            </a>
+
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <!-- Link de vuelta al inicio -->
+                    <li><a href="index.html">Volver al Inicio</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="privacy-section">
+        <div class="container">
+            <article class="paper-card">
+                <div class="header-text">
+                    <h1>Política de Privacidad</h1>
+                    <p class="update-date">Última actualización: Octubre 2023</p>
+                </div>
+
+                <div class="content-block">
+                    <p>En <strong>Nexo Logic</strong>, nos tomamos muy en serio la seguridad de tus datos. Esta política describe cómo recopilamos, utilizamos y protegemos la información que nos proporcionas a través de nuestro sitio web y servicios.</p>
+                </div>
+
+                <div class="content-block">
+                    <h2>1. Responsable del Tratamiento</h2>
+                    <p>El responsable del tratamiento de sus datos personales es:</p>
+                    <ul>
+                        <li><strong>Entidad:</strong> Nexo Logic</li>
+                        <li><strong>Email:</strong> hello@nexologic.com</li>
+                        <li><strong>Dirección:</strong> Calle Oscura 42, Tech District, Madrid</li>
+                    </ul>
+                </div>
+
+                <div class="content-block">
+                    <h2>2. Datos que Recopilamos</h2>
+                    <p>Recopilamos únicamente los datos necesarios para prestar nuestros servicios de forma eficiente:</p>
+                    
+                    <h3>Datos Personales</h3>
+                    <p>Cuando rellenas el formulario de contacto, solicitamos: Nombre, Dirección de correo electrónico y opcionalmente número de teléfono.</p>
+
+                    <h3>Datos de Navegación (Cookies)</h3>
+                    <p>Utilizamos cookies técnicas y analíticas para entender cómo interactúas con nuestro sitio web. Estas cookies no almacenan información personal identificable.</p>
+                </div>
+
+                <div class="content-block">
+                    <h2>3. Finalidad del Tratamiento</h2>
+                    <p>Los datos proporcionados se utilizarán para las siguientes finalidades:</p>
+                    <ul>
+                        <li>Gestionar y responder a tus consultas a través del formulario de contacto.</li>
+                        <li>Enviar comunicaciones comerciales (si has dado tu consentimiento explícito).</li>
+                        <li>Analizar el tráfico web y mejorar la experiencia de usuario mediante Google Analytics u otras herramientas.</li>
+                    </ul>
+                </div>
+
+                <div class="content-block">
+                    <h2>4. Base Legal</h2>
+                    <p>El tratamiento de tus datos se basa en el consentimiento del interesado (al marcar la casilla o enviar el formulario) y en la ejecución de un contrato de servicios.</p>
+                </div>
+
+                <div class="content-block">
+                    <h2>5. Seguridad de los Datos</h2>
+                    <p>Implementamos medidas técnicas y organizativas apropiadas para proteger tus datos personales contra acceso no autorizado, alteración, divulgación o destrucción.</p>
+                    <div class="highlight-box">
+                        <p><strong><i class="fa-solid fa-shield-halved"></i> Encriptación:</strong> Todo el tráfico entre tu navegador y nuestros servidores está encriptado mediante SSL/TLS.</p>
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <h2>6. Tus Derechos</h2>
+                    <p>Tienes derecho a acceder, rectificar, suprimir, limitar u oponerte al tratamiento de tus datos, así como a la portabilidad de los mismos. Puedes ejercer estos derechos enviando un correo a hello@nexologic.com.</p>
+                </div>
+
+                <div class="content-block">
+                    <h2>7. Cambios en esta Política</h2>
+                    <p>Nos reservamos el derecho a modificar esta política de privacidad en cualquier momento. Cualquier cambio se publicará en esta página con una fecha de actualización revisada.</p>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                         <!-- Logo en footer -->
+                         <img src="./Agenda(5).png" alt="Nexo Logic Logo" style="height: 40px; width: auto;">
+                    </a>
+                    <p>Ingeniería de software de alto nivel. Conectando ideas en un mundo digital complejo.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacidad</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Cookies</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="index.html">Nosotros</a></li>
+                        <li><a href="#">Carreras</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Síguenos</h4>
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#"><i class="fa-brands fa-github"></i> GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2023 Nexo Logic. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts (Menú Móvil) -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            const icon = mobileMenuBtn.querySelector('i');
+            if (navLinks.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Cerrar menú al hacer click
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                const icon = mobileMenuBtn.querySelector('i');
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            });
+        });
+    </script>
+</body>
+
+</html>

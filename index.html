@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nexo Logic - Desarrollo de software e integración de sistemas. Visión nocturna.">
+    <title>Nexo Logic</title>
+
+    <!-- Fuentes de Google: Inter y JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Muli:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tu Favicon -->
+    <link rel="shortcut icon" href="./Agenda(6).ico" type="image/x-icon">
+
+    <!-- Iconos FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- ENLACE A TU ARCHIVO CSS -->
+    <link rel="stylesheet" href="./styleIndex.css">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img class="img-nexo" src="./Agenda(5).png" alt="Nexo Logic Logo">
+            </a>
+
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#alcance">Alcance</a></li> <!-- NUEVO ENLACE -->
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#portafolio">Portafolio</a></li>
+                    <li><a href="#contacto" class="btn btn-primary"
+                            style="padding: 8px 20px; color: white;">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section id="inicio" class="hero">
+            <div class="container hero-content">
+                <div class="hero-text reveal">
+                    <span class="section-subtitle" style="color: var(--accent-color);">// Experiencia Validada</span>
+                    <!-- Nuevo H1: Enfatiza experiencia y compromiso -->
+                    <h1>Somos un <span class="highlight">nexo</span> sólido entre idea y realidad</h1>
+
+                    <!-- Nuevo P: Explica claramente que son emprendedores expertos -->
+                    <p>Un grupo de programadores emprendedores con experiencia en grandes proyectos. Responsables,
+                        comprometidos y listos para construir tu futuro tecnológico.</p>
+
+                    <div class="hero-buttons">
+                        <a href="#contacto" class="btn btn-primary">Hablemos</a>
+                        <a href="#portafolio" class="btn btn-outline">Ver Trabajo</a>
+                    </div>
+                </div>
+
+                <div class="hero-image reveal">
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <!-- NUEVA ANIMACIÓN DE CÓDIGO -->
+                        <div class="code-content">
+                            <span class="keyword">class</span> <span class="function">WelcomeSystem</span> {<br>
+                            &nbsp;&nbsp;<span class="keyword">constructor</span>() {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">this</span>.experience = <span
+                                class="string">"Big Projects"</span>;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">this</span>.startup = <span
+                                class="string">"Nexo Logic"</span>;<br>
+                            &nbsp;&nbsp;}<br><br>
+                            &nbsp;&nbsp;<span class="function">init</span>() {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">console</span>.<span
+                                class="function">log</span>(<span class="string">"Bienvenido a Nexo Logic"</span>);<br>
+                            &nbsp;&nbsp;}<br>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <!-- Servicios -->
+        <section id="servicios" class="section-padding services">
+            <div class="container">
+                <div class="text-center reveal">
+                    <span class="section-subtitle">Nuestras capacidades</span>
+                    <h2 class="section-title">Servicios</h2>
+                </div>
+
+                <div class="services-grid">
+                    <article class="service-card reveal">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <h3>Desarrollo Web</h3>
+                        <p>Arquitecturas web oscuras y optimizadas para rendimiento, diseño responsivo y experiencias de
+                            usuario inmersivas.</p>
+                    </article>
+
+                    <article class="service-card reveal">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-network-wired"></i>
+                        </div>
+                        <h3>Integración de Sistemas</h3>
+                        <p>Enlaces seguros entre plataformas. Unificamos tus datos en un nexo centralizado y accesible.
+                        </p>
+                    </article>
+
+                    <article class="service-card reveal">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div>
+                        <h3>Apps Móviles</h3>
+                        <p>Aplicaciones con modos oscuros nativos y batería optimizada, funcionando las 24 horas del
+                            día.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- NUEVA SECCIÓN: ALCANCE DEL PROYECTO -->
+        <section id="alcance" class="section-padding scope-section">
+            <div class="container">
+                <div class="text-center reveal">
+                    <span class="section-subtitle">// Versatilidad Total</span>
+                    <h2 class="section-title">Alcance del Proyecto</h2>
+                    <p style="color: var(--text-muted); max-width: 700px; margin: 0 auto;">
+                        Realizamos todo tipo de proyectos, desde páginas web sencillas y funcionales hasta sistemas completos y aplicaciones complejas.
+                    </p>
+                </div>
+
+                <div class="scope-grid reveal">
+                    <!-- Tarjeta 1: Web Sencilla -->
+                    <article class="scope-card">
+                        <div class="scope-number">01</div>
+                        <div class="scope-content">
+                            <i class="fa-solid fa-globe"></i>
+                            <h3>Páginas Web Funcionales</h3>
+                            <p>Sitios web sencilillos, landing pages y blogs optimizados paraSEO. Diseños limpios que cargan rápido y cumplen su objetivo principal.</p>
+                        </div>
+                    </article>
+
+                    <!-- Tarjeta 2: Apps -->
+                    <article class="scope-card">
+                        <div class="scope-number">02</div>
+                        <div class="scope-content">
+                            <i class="fa-solid fa-layer-group"></i>
+                            <h3>Aplicaciones de Todo Tipo</h3>
+                            <p>Desarrollo de aplicaciones móviles y de escritorio. Soluciones personalizadas que se adaptan a tu flujo de trabajo y dispositivos.</p>
+                        </div>
+                    </article>
+
+                    <!-- Tarjeta 3: Sistemas -->
+                    <article class="scope-card">
+                        <div class="scope-number">03</div>
+                        <div class="scope-content">
+                            <i class="fa-solid fa-server"></i>
+                            <h3>Sistemas Complejos</h3>
+                            <p>ERP, CRM y plataformas de gestión de alto nivel. Integramos bases de datos, APIs y lógica de negocio robusta.</p>
+                        </div>
+                    </article>
+
+                    <!-- Tarjeta 4: Soluciones -->
+                    <article class="scope-card">
+                        <div class="scope-number">04</div>
+                        <div class="scope-content">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                            <h3>Mantenimiento y Más</h3>
+                            <p>Todo lo que necesites para mantener tu tecnología al día: actualizaciones, seguridad y escalabilidad.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- STACK TECNOLÓGICO -->
+        <section class="section-padding tech-stack">
+            <div class="container">
+                <div class="text-center reveal">
+                    <span class="section-subtitle">Herramientas de Guerra</span>
+                    <h2 class="section-title">Nuestro Stack Tecnológico</h2>
+                    <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">
+                        Dominamos un ecosistema completo de lenguajes y frameworks para ofrecer la solución más
+                        eficiente.
+                    </p>
+                </div>
+
+                <div class="stack-grid reveal">
+                    <!-- FRONTEND -->
+                    <div class="tech-card" data-category="Frontend">
+                        <i class="fa-brands fa-react"></i>
+                        <h3>React JS</h3>
+                        <span class="tech-tag">Frontend</span>
+                    </div>
+
+
+                    <!-- MOBILE -->
+                    <div class="tech-card" data-category="Mobile">
+                        <i class="fa-brands fa-swift"></i>
+                        <h3>Swift</h3>
+                        <span class="tech-tag">iOS</span>
+                    </div>
+
+                    <div class="tech-card" data-category="Mobile">
+                        <i class="fa-brands fa-react"></i>
+                        <h3>React Native</h3>
+                        <span class="tech-tag">Multiplatform</span>
+                    </div>
+
+                    <div class="tech-card" data-category="Mobile">
+                        <i class="fa-brands fa-android"></i>
+                        <h3>Kotlin</h3>
+                        <span class="tech-tag">Android</span>
+                    </div>
+
+                    <!-- BACKEND -->
+                    <div class="tech-card" data-category="Backend">
+                        <i class="fa-brands fa-node"></i>
+                        <h3>Node JS</h3>
+                        <span class="tech-tag">Backend</span>
+                    </div>
+
+
+                    <!-- DATABASES -->
+                    <div class="tech-card" data-category="Data">
+                        <i class="fa-solid fa-database"></i>
+                        <h3>PostgreSQL</h3>
+                        <span class="tech-tag">SQL</span>
+                    </div>
+
+                    <div class="tech-card" data-category="Data">
+                        <i class="fa-solid fa-database"></i>
+                        <h3>MySQL</h3>
+                        <span class="tech-tag">SQL</span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <!-- Nosotros -->
+        <section id="nosotros" class="section-padding about">
+            <div class="container">
+
+                <!-- Intro & Stats -->
+                <div class="about-grid">
+                    <div class="about-image reveal">
+                        <img src="https://picsum.photos/seed/nexologicdark/600/500" alt="Equipo en oficina oscura">
+                    </div>
+                    <div class="about-content reveal">
+                        <span class="section-subtitle" style="color: var(--accent-color);">Sobre Nexo Logic</span>
+                        <!-- Nuevo Título: Enfatiza la historia/experiencia -->
+                        <h2>Veteranos del Código</h2>
+
+                        <!-- Nuevo Texto: Menciona explícitamente el emprendimiento y la experiencia previa -->
+                        <p>Somos un equipo de programadores emprendedores que hemos unido fuerzas tras trabajar en
+                            sistemas complejos para grandes corporaciones. Traemos la solidez y la seriedad de proyectos
+                            de alto nivel a cada cliente.</p>
+
+                        <div class="stats-container">
+
+                            <div class="stat-item">
+                                <h4>24/7</h4>
+                                <span>Soporte</span>
+                            </div>
+                            <div class="stat-item">
+                                <h4>100%</h4>
+                                <span>Compromiso</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SECCIÓN: EQUIPO (Estilo Tarjetas Apiladas) -->
+                <div class="team-section reveal">
+                    <div class="text-center">
+                        <span class="section-subtitle">El Escuadrón</span>
+                        <h2 class="section-title" style="font-size: 2rem;">Nuestro Equipo de Desarrollo</h2>
+                    </div>
+
+                    <!-- Nuevo Contenedor Flex para las tarjetas apiladas -->
+                    <div class="team-card-container">
+
+                        <!-- Tarjeta 1: Jesús Morales -->
+                        <div class="team-hover-card">
+                            <h3 class="team-card-name">Jesús Morales</h3>
+                            <p class="team-card-role">Encargado Depto. Mobile</p>
+
+                            <!-- Contenedor del círculo con Foto y Borde SVG -->
+                            <div class="circle">
+                                <!-- Borde SVG decorativo -->
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                    style="position: absolute; top: 0; left: 0; z-index: 2;">
+                                    <circle class="stroke" cx="60" cy="60" r="50" />
+                                </svg>
+                                <!-- Foto de la persona -->
+                                <img src="https://picsum.photos/seed/jesus/200" alt="Jesús Morales">
+                            </div>
+
+                            <!-- Barra de progreso decorativa -->
+                            <div class="bar">
+                                <div class="emptybar"></div>
+                                <div class="filledbar"></div>
+                            </div>
+                        </div>
+
+                        <!-- Tarjeta 2: Ricardo Fenómeno -->
+                        <div class="team-hover-card">
+                            <h3 class="team-card-name">Ricardo Fenómeno</h3>
+                            <p class="team-card-role">Encargado Depto. Backend</p>
+
+                            <div class="circle">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                    style="position: absolute; top: 0; left: 0; z-index: 2;">
+                                    <circle class="stroke" cx="60" cy="60" r="50" />
+                                </svg>
+                                <img src="https://picsum.photos/seed/ricardo/200" alt="Ricardo Fenómeno">
+                            </div>
+
+                            <div class="bar">
+                                <div class="emptybar"></div>
+                                <div class="filledbar"></div>
+                            </div>
+                        </div>
+
+                        <!-- Tarjeta 3: Jesús Mejías -->
+                        <div class="team-hover-card">
+                            <h3 class="team-card-name">Jesús Mejías</h3>
+                            <p class="team-card-role">Encargado Depto. Frontend</p>
+
+                            <div class="circle">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                    style="position: absolute; top: 0; left: 0; z-index: 2;">
+                                    <circle class="stroke" cx="60" cy="60" r="50" />
+                                </svg>
+                                <img src="https://picsum.photos/seed/mejias/200" alt="Jesús Mejías">
+                            </div>
+
+                            <div class="bar">
+                                <div class="emptybar"></div>
+                                <div class="filledbar"></div>
+                            </div>
+                        </div>
+
+                       
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- PROCESO DE TRABAJO -->
+        <section class="section-padding process-section">
+            <div class="container">
+                <div class="text-center reveal">
+                    <span class="section-subtitle">Flujo de Operaciones</span>
+                    <h2 class="section-title">Cómo Desarrollamos tu Proyecto</h2>
+                    <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">
+                        Nuestra metodología garantiza resultados predecibles y de alta calidad. Desde la idea hasta el
+                        lanzamiento.
+                    </p>
+                </div>
+
+                <div class="process-wrapper reveal">
+
+                    <!-- PASO 1 -->
+                    <div class="step-card">
+                        <div class="step-icon">
+                            <i class="fa-solid fa-magnifying-glass-chart"></i>
+                            <span class="step-number">01</span>
+                        </div>
+                        <div class="step-content">
+                            <h3>Descubrimiento</h3>
+                            <p>Analizamos tus necesidades, definimos el alcance y establecemos los objetivos técnicos.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- PASO 2 -->
+                    <div class="step-card">
+                        <div class="step-icon">
+                            <i class="fa-solid fa-sitemap"></i>
+                            <span class="step-number">02</span>
+                        </div>
+                        <div class="step-content">
+                            <h3>Diseño y Arquitectura</h3>
+                            <p>Planificamos la estructura de la base de datos, APIs y la interfaz de usuario (UX/UI).
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- PASO 3 -->
+                    <div class="step-card">
+                        <div class="step-icon">
+                            <i class="fa-solid fa-code"></i>
+                            <span class="step-number">03</span>
+                        </div>
+                        <div class="step-content">
+                            <h3>Desarrollo Ágil</h3>
+                            <p>Programación iterativa. Escribimos código limpio, modular y seguro en sprints semanales.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- PASO 4 -->
+                    <div class="step-card">
+                        <div class="step-icon">
+                            <i class="fa-solid fa-vial-circle-check"></i>
+                            <span class="step-number">04</span>
+                        </div>
+                        <div class="step-content">
+                            <h3>Testing & QA</h3>
+                            <p>Auditoría de seguridad, pruebas de carga y corrección de bugs para asegurar la
+                                estabilidad.</p>
+                        </div>
+                    </div>
+
+                    <!-- PASO5 -->
+                    <div class="step-card">
+                        <div class="step-icon">
+                            <i class="fa-solid fa-rocket"></i>
+                            <span class="step-number">05</span>
+                        </div>
+                        <div class="step-content">
+                            <h3>Lanzamiento y Soporte</h3>
+                            <p>Despliegue en producción y monitoreo continuo para asegurar el funcionamiento óptimo.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <!-- PORTAFOLIO (ESTILO ACORDEÓN) -->
+        <section id="portafolio" class="section-padding portfolio">
+            <div class="container">
+                <div class="text-center reveal">
+                    <span class="section-subtitle">Evidencia</span>
+                    <h2 class="section-title">Proyectos Recientes</h2>
+                    <p style="margin-bottom: 40px; color: var(--text-muted);">Haz clic en un proyecto para expandir los
+                        detalles</p>
+                </div>
+
+                <!-- Galería Acordeón -->
+                <div class="gallery-container">
+                    <!-- Proyecto 1 -->
+                    <div class="slide-project"
+                        style="background-image: url('https://picsum.photos/seed/cybersecurity/800/1200');">
+                        <div class="slide-content">
+                            <h3>Cyber Shield</h3>
+                            <p>Sistema avanzado de detección de intrusiones para infraestructuras críticas.</p>
+                            <a href="#" class="project-link-acc">Ver Detalles</a>
+                        </div>
+                    </div>
+                    <!-- Proyecto 2 -->
+                    <div class="slide-project active"
+                        style="background-image: url('./imagenes/marketgopage.png');">
+                        <div class="slide-content">
+                            <h3>MarketGo</h3>
+                            <p>Plataforma de Ecommerce multitienda con app de pedidos por delivery</p>
+                            <a href="http://marketgo.website/" target="_blank" class="project-link-acc">Ver Demo</a>
+                        </div>
+                    </div>
+                    <!-- Proyecto 3 -->
+                    <div class="slide-project"
+                        style="background-image: url('https://picsum.photos/seed/dashai/800/1200');">
+                        <div class="slide-content">
+                            <h3>AI Dashboard</h3>
+                            <p>Visualización de datos en tiempo real alimentada por redes neuronales.</p>
+                            <a href="#" class="project-link-acc">Ver Análisis</a>
+                        </div>
+                    </div>
+                    <!-- Proyecto 4 -->
+                    <div class="slide-project"
+                        style="background-image: url('https://picsum.photos/seed/mobileapp/800/1200');">
+                        <div class="slide-content">
+                            <h3>Connect App</h3>
+                            <p>Aplicación móvil corporativa con comunicación encriptada de extremo a extremo.</p>
+                            <a href="#" class="project-link-acc">Descargar App</a>
+                        </div>
+                    </div>
+                    <!-- Proyecto 5 -->
+                    <div class="slide-project"
+                        style="background-image: url('https://picsum.photos/seed/serverroom/800/1200');">
+                        <div class="slide-content">
+                            <h3>Cloud Core</h3>
+                            <p>Migración y optimización de servidores legacy a la nube híbrida.</p>
+                            <a href="#" class="project-link-acc">Ver Arquitectura</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+        <!-- BANNER DE LLAMADA A LA ACCIÓN (CTA) -->
+        <section class="cta-banner">
+            <div class="container">
+                <div class="cta-content reveal">
+                    <!-- Icono decorativo superior -->
+                    <div class="cta-icon">
+                        <i class="fa-solid fa-power-off"></i>
+                    </div>
+
+                    <h2>¿Listo para digitalizar tu negocio?</h2>
+                    <p class="cta-subtitle">El futuro del código está listo para ti. Transforma tus ideas en realidad
+                        hoy mismo.</p>
+
+                    <a href="#contacto" class="btn-giant">
+                        Iniciar Proyecto <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contacto" class="section-padding contact">
+            <div class="container">
+                <div class="text-center reveal">
+                    <span class="section-subtitle">Transmisión</span>
+                    <h2 class="section-title">Establecer Enlace</h2>
+                </div>
+
+                <div class="contact-wrapper reveal">
+                    <div class="contact-info">
+                        <div>
+                            <h3>Coordenadas</h3>
+                            <p style="margin-bottom: 30px; opacity: 0.8;">Nuestra línea de comunicación está siempre
+                                abierta. Conecta con nosotros para comenzar tu próximo proyecto.</p>
+                            <div class="info-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div>
+                                    <h4>Base Central</h4>
+                                    <p>Calle Oscura 42, Tech District, Madrid</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fa-solid fa-envelope"></i>
+                                <div>
+                                    <h4>Email Encriptado</h4>
+                                    <p>hello@nexologic.com</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fa-solid fa-phone"></i>
+                                <div>
+                                    <h4>Línea Directa</h4>
+                                    <p>+34 900 000 000</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" style="color: white; margin-right: 15px; font-size: 1.2rem;"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                            <a href="#" style="color: white; margin-right: 15px; font-size: 1.2rem;"><i
+                                    class="fa-brands fa-twitter"></i></a>
+                            <a href="#" style="color: white; font-size: 1.2rem;"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Identificador (Nombre)</label>
+                                <input type="text" id="name" class="form-control" placeholder="Tu nombre" required>
+                            </div>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" class="form-control" placeholder="tu@email.com"
+                                        required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Teléfono</label>
+                                    <input type="tel" id="phone" class="form-control" placeholder="+34...">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Tipo de Misión</label>
+                                <select id="service" class="form-control">
+                                    <option value="web">Desarrollo Web</option>
+                                    <option value="integration">Integración</option>
+                                    <option value="mobile">App Móvil</option>
+                                    <option value="security">Seguridad</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensaje Encriptado</label>
+                                <textarea id="message" class="form-control" placeholder="Describe tus objetivos..."
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Transmitir Datos</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <img src="./Agenda(5).png" alt="Nexo Logic Logo" style="height: 40px; width: auto;">
+                    </a>
+                    <p>Ingeniería de software de alto nivel. Conectando ideas en un mundo digital complejo.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#">Carreras</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#">Desarrollo</a></li>
+                        <li><a href="#">Integración</a></li>
+                        <li><a href="#">Seguridad</a></li>
+                        <li><a href="#">Consultoría</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="/privacidad.html">Privacidad</a></li>
+                        <li><a href="#">Términos</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Nexo Logic. Todos los sistemas operativos.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- NOTIFICACIÓN TOAST (NUEVO) -->
+    <div id="toast" class="toast">
+        <div class="toast-icon"><i class="fa-solid fa-circle-check"></i></div>
+        <div class="toast-content">
+            <h4>Transmisión Exitosa</h4>
+            <p>Datos recibidos en Nexo Logic. Nos pondremos en contacto pronto.</p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // 1. Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            const icon = mobileMenuBtn.querySelector('i');
+            if (navLinks.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                const icon = mobileMenuBtn.querySelector('i');
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            });
+        });
+
+        // 2. Mouse Glow Effect for Cards
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+            });
+        });
+
+        // 3. Scroll Animation
+        const revealElements = document.querySelectorAll('.reveal');
+
+        const revealOnScroll = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px"
+        });
+
+        revealElements.forEach(el => revealOnScroll.observe(el));
+
+        // 4. Form Submission Handling (Updated with Toast)
+        const contactForm = document.getElementById('contactForm');
+        const toast = document.getElementById('toast');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const btn = contactForm.querySelector('button');
+            const originalText = btn.innerText;
+
+            btn.innerText = 'Transmitiendo...';
+            btn.disabled = true;
+            btn.style.opacity = '0.7';
+
+            setTimeout(() => {
+                // Mostrar Toast en lugar de alert
+                toast.classList.add('show');
+                
+                // Resetear formulario
+                contactForm.reset();
+                btn.innerText = originalText;
+                btn.disabled = false;
+                btn.style.opacity = '1';
+
+                // Ocultar Toast después de 4 segundos
+                setTimeout(() => {
+                    toast.classList.remove('show');
+                }, 4000);
+
+            }, 1500);
+        });
+
+        // 5. --- GALLERY ACCORDION LOGIC (TUS PROYECTOS) ---
+        const slides = document.querySelectorAll(".slide-project");
+
+        slides.forEach((slide) => {
+            slide.addEventListener("click", () => {
+                removeActiveClasses();
+                slide.classList.add("active");
+            });
+        });
+
+        function removeActiveClasses() {
+            slides.forEach((slide) => {
+                slide.classList.remove("active");
+            });
+        }
+    </script>
+</body>
+
+</html>
