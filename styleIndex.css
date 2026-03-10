@@ -639,20 +639,23 @@ header {
     height: 120px;
     border-radius: 50%;
     overflow: hidden;
-    background-color: #000;
+    background-color: #0f172a;
     border: 2px solid var(--border-color);
     z-index: 2; /* Círculo detrás del texto pero dentro de la tarjeta */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.circle img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.4s;
+.team-icon {
+    font-size: 3rem;
+    color: var(--accent-color);
+    transition: transform 0.4s, color 0.3s;
 }
 
-.team-hover-card:hover .circle img {
-    transform: scale(1.1);
+.team-hover-card:hover .team-icon {
+    transform: scale(1.2);
+    color: var(--primary-color);
 }
 
 /* Barra de Progreso Decorativa */
@@ -1049,6 +1052,32 @@ footer {
         border-right: none;
         border-bottom: 1px solid var(--border-color);
     }
+}
+
+/* --- BOTÓN FLOTANTE WHATSAPP --- */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    background-color: #20b857;
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
 }
 
 .img-nexo{
